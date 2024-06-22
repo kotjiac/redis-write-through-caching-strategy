@@ -87,4 +87,6 @@ Access `Adminer` and `Redis Commander` to see cache and data updates
 
 # References
 
-[1] https://redis.io/learn/howtos/solutions/caching-architecture/write-through#additional-resources <br>
+[1] https://redis.io/learn/howtos/solutions/caching-architecture/write-through
+
+<br>
