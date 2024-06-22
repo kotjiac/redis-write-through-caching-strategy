@@ -11,7 +11,11 @@ docker compose up -d
 
 Access `Adminer`: http://localhost:8080/?pgsql=postgres&username=root&db=example&ns=public&sql=
 
+<br>
+
 ![alt text](images/image01.png)
+
+<br>
 
 Run SQL command:
 
@@ -29,7 +33,11 @@ CREATE TABLE users (
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 ```
+<br>
+
 ![](images/image02.png)
+
+<br>
 
 ## Create a RedisGears recipe
 
@@ -54,8 +62,15 @@ hset __{users:2} username beltrano email beltrano@detal.com.br pwhash d1e8a70b5c
 ```redis
 hset __{users:3} username sicrano email sicrano@detal.com.br pwhash d1e8a70b5ccab1dc2f56bbf7e99f064a660c08e361a35751b9c483c88943d082 first Sicrano last deTal dob 1981-01-01 score 0 created_at 2024-06-23 updated_at 2024-06-23
 ```
+<br>
 
 ![alt text](images/image03.png)
+
+<br>
+
+![alt text](images/image04.png)
+
+<br>
 
 ## Testing
 
