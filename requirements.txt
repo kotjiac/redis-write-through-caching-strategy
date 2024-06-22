@@ -1,0 +1,5 @@
+rgsync
+psycopg2-binary
+cryptography
+confluent-kafka
+redis
