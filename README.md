@@ -68,13 +68,13 @@ pip install -r requirements.txt
 Run `producer.py` to generate update messages
 
 ```bash
-python producer.py
+python producer.py config.ini
 ```
 
 Run `consumer.py` to update cache/pgsql
 
 ```bash
-python consumer.py
+python consumer.py config.ini
 ```
 
 Access `Adminer` and `Redis Commander` to see cache and data updates
