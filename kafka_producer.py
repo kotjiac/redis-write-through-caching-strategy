@@ -31,7 +31,7 @@ if __name__ == '__main__':
         if err:
             print('ERROR: Message failed delivery: {}'.format(err))
         else:
-            print("Produced message to topic {topic}: partition=[{partition}] key={key:8} score={value:6}".format(topic=msg.topic(), partition=msg.partition(), key=msg.key().decode('utf-8'), value=msg.value().decode('utf-8')))
+            print("Produced message to topic {topic}: partition=[{partition}] key={key:2} score={value:6}".format(topic=msg.topic(), partition=msg.partition(), key=msg.key().decode('utf-8'), value=msg.value().decode('utf-8')))
 
     # Generate a random score
     def generate_randon_score(score):

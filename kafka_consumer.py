@@ -37,7 +37,7 @@ if __name__ == '__main__':
                 r = Redis(host='localhost', port=6379, decode_responses=True)
                 r.hset('__{users:'+ str(message_key) +'}', mapping={'score': score})
                 # Extract the (optional) key and value, and print.
-                print("Consumed message from topic {topic}: partition=[{partition}] key={key:8} score={value:6}".format(topic=msg.topic(), partition=msg.partition(), key=msg.key().decode('utf-8'), value=msg.value().decode('utf-8')))
+                print("Consumed message from topic {topic}: partition=[{partition}] key={key:2} score={value:6}".format(topic=msg.topic(), partition=msg.partition(), key=msg.key().decode('utf-8'), value=msg.value().decode('utf-8')))
     except KeyboardInterrupt:
         pass
     finally:
